@@ -1,5 +1,5 @@
 """
-Defines the PriorSampler class, which samples from prior distributions of our model.
+Defines the MixtureSampler class, which samples from the various distributions of our model.
 """
 from typing import Dict
 import numpy as np
@@ -9,7 +9,7 @@ from scipy.linalg import block_diag
 
 class MixtureSampler:
     """
-    Allows sampling from prior distributions using a common np.random.Generator object.
+    Allows sampling from distributions using a common np.random.Generator object.
     """
     _generator: np.random.Generator
     _prior_parameters: Dict
